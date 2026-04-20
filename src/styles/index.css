@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background:
+      radial-gradient(circle at top, rgba(16, 35, 63, 0.08), transparent 34%),
+      linear-gradient(180deg, #f7f9fd 0%, #eef3fb 45%, #f7f9fd 100%);
+    color: #08111f;
+    font-family: 'Rubik', system-ui, sans-serif;
+  }
+
+  html.dark body {
+    background:
+      radial-gradient(circle at top, rgba(207, 214, 228, 0.08), transparent 30%),
+      linear-gradient(180deg, #06080d 0%, #09101a 45%, #06080d 100%);
+    color: white;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  #root {
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: rgba(207, 214, 228, 0.22);
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+}
