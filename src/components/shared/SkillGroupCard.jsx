@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import SkillCard from './SkillCard';
+import { motion } from "framer-motion";
+import SkillCard from "./SkillCard";
 
 function SkillGroupCard({ title, icon: Icon, skills }) {
   return (
@@ -15,8 +15,12 @@ function SkillGroupCard({ title, icon: Icon, skills }) {
           <Icon size={20} />
         </div>
         <div>
-          <h3 className="text-2xl font-semibold text-obsidian dark:text-white">{title}</h3>
-          <p className="text-sm text-slate-500 dark:text-silver/60">Curated strengths and working tools</p>
+          <h3 className="text-2xl font-semibold text-obsidian dark:text-white">
+            {title}
+          </h3>
+          <p className="text-sm text-slate-500 dark:text-silver/60">
+            working tools
+          </p>
         </div>
       </div>
       <div className="grid gap-4">

@@ -14,10 +14,10 @@ function ConnectStrip() {
       >
         <div>
           <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-silver/55">Let’s Connect</p>
-          <h2 className="mt-3 font-display text-4xl font-semibold text-obsidian dark:text-white">Ready to build something polished?</h2>
+          <h2 className="mt-3 font-display text-4xl font-semibold text-obsidian dark:text-white">Ready to build anything?</h2>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600 dark:text-silver/85 sm:text-base">
             I’m open to collaboration, freelance opportunities, and conversations around
-            frontend work, interface design, and premium digital experiences.
+            frontend work and interface design.
           </p>
         </div>
 

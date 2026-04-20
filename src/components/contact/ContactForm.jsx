@@ -41,7 +41,7 @@ function ContactForm() {
       return;
     }
 
-    setStatus('Your message has been prepared successfully. Backend integration can be added later.');
+    setStatus('Your message has been prepared successfully.');
     setFormData(initialState);
     setErrors({});
   };

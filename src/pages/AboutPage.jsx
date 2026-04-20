@@ -7,7 +7,7 @@ function AboutPage() {
     <PageShell
       eyebrow="About Me"
       title="A story shaped by programming, design awareness, and communication."
-      description="This page presents Mohammad’s background through a premium editorial layout with calm motion, clean spacing, and readable content sections."
+      description="This page presents Mohammad’s background."
     >
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <motion.div

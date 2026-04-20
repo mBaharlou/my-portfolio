@@ -29,9 +29,9 @@ export const profile = {
   intro:
     'I build elegant interfaces with clean structure, thoughtful motion, and a strong focus on modern user experience.',
   summary:
-    'My path blends technology, design awareness, and communication. Alongside programming, I study Public Relations and Advertising at Anadolu University, which shapes how I think about storytelling, audience, and digital presentation.',
+    'My focus is on front and ui with React js.',
   heroNote:
-    'Designing polished, responsive experiences with clarity, motion, and premium visual balance.',
+    'this web is my all experience in years programing.',
 };
 
 export const stats = [

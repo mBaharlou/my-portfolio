@@ -11,20 +11,22 @@
     />
     <meta
       name="description"
-      content="Mohammad's premium portfolio website built with React, Tailwind CSS, and Framer Motion."
+      content="Mohammad's portfolio website built with React."
     />
     <title>Mohammad | Portfolio</title>
     <script>
       (() => {
-        const storageKey = 'portfolio-theme';
+        const storageKey = "portfolio-theme";
         const savedTheme = localStorage.getItem(storageKey);
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = savedTheme || (prefersDark ? 'dark' : 'dark');
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const theme = savedTheme || (prefersDark ? "dark" : "dark");
         document.documentElement.dataset.theme = theme;
-        if (theme === 'dark') {
-          document.documentElement.classList.add('dark');
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
         } else {
-          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.remove("dark");
         }
       })();
     </script>

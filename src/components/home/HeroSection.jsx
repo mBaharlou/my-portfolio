@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, Github, Mail } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import profileImage from '../../assets/profile.jpeg';
-import { profile, stats } from '../../data/site';
+import { motion } from "framer-motion";
+import { ArrowRight, Github, Mail } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import profileImage from "../../assets/profile.jpeg";
+import { profile, stats } from "../../data/site";
 
 function HeroSection() {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ function HeroSection() {
     }
 
     hoverTimeoutRef.current = window.setTimeout(() => {
-      navigate('/about');
+      navigate("/about");
     }, 2000);
   };
 
@@ -48,7 +48,7 @@ function HeroSection() {
           transition={{ duration: 0.45 }}
           className="mb-4 text-sm uppercase tracking-[0.35em] text-slate-500 dark:text-silver/60"
         >
-          Modern Frontend Portfolio
+          front end developer
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 28 }}
@@ -151,14 +151,17 @@ function HeroSection() {
                   ? { opacity: 1, scale: 1.04 }
                   : { opacity: 0.45, scale: 0.96 }
               }
-              transition={{ duration: 0.25, ease: 'easeOut' }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
               className="pointer-events-none absolute inset-[-6px] rounded-full border border-navy/20 dark:border-white/20"
             />
             <motion.span
               aria-hidden="true"
               initial={{ scaleX: 0 }}
               animate={{ scaleX: isHoveringAvatar ? 1 : 0 }}
-              transition={{ duration: isHoveringAvatar ? 2 : 0.2, ease: 'linear' }}
+              transition={{
+                duration: isHoveringAvatar ? 2 : 0.2,
+                ease: "linear",
+              }}
               className="pointer-events-none absolute inset-x-6 bottom-4 h-1 origin-left rounded-full bg-navy/60 dark:bg-white/60"
             />
             <img
