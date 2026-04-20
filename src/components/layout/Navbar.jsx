@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
         <motion.nav
           initial={{ y: -24, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -67,17 +67,19 @@ function Navbar() {
               {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
+        </motion.nav>
 
-          <AnimatePresence>
-            {isOpen && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3 }}
-                className="overflow-hidden lg:hidden"
-              >
-                <div className="mt-4 space-y-2 border-t border-slate-300/70 pt-4 dark:border-white/10">
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.22, ease: 'easeOut' }}
+              className="absolute inset-x-4 top-full mt-3 lg:hidden sm:inset-x-6"
+            >
+              <div className="overflow-hidden rounded-[1.75rem] border border-slate-300/70 bg-white/95 p-4 shadow-glow backdrop-blur-xl transition-colors duration-300 dark:border-white/10 dark:bg-[#0b1220]/95">
+                <div className="space-y-2">
                   <div className="flex justify-end pb-2">
                     <ThemeToggle />
                   </div>
@@ -107,10 +109,10 @@ function Navbar() {
                     Visit My GitHub
                   </ButtonLink>
                 </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </motion.nav>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
