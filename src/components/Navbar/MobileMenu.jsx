@@ -23,7 +23,7 @@ function MobileMenu({ isOpen, links, onClose }) {
 
           <motion.div
             id="mobile-navigation"
-            className="fixed inset-x-3 top-[4.5rem] overflow-hidden rounded-[1.35rem] border border-slate-300/80 bg-[#f7f9fd]/92 shadow-[0_22px_55px_rgba(8,17,31,0.16)] backdrop-blur-2xl dark:border-white/12 dark:bg-[#08111f]/90 dark:shadow-[0_22px_60px_rgba(0,0,0,0.38)] sm:inset-x-6 lg:hidden"
+            className="fixed inset-x-3 top-[4.5rem] overflow-hidden rounded-[1.35rem] border border-slate-300/90 bg-white/95 shadow-[0_22px_55px_rgba(8,17,31,0.18)] backdrop-blur-2xl dark:border-white/12 dark:bg-[#08111f]/90 dark:shadow-[0_22px_60px_rgba(0,0,0,0.38)] sm:inset-x-6 lg:hidden"
             initial={{ opacity: 0, y: -12, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.985 }}
