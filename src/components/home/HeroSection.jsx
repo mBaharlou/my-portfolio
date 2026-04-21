@@ -141,7 +141,7 @@ function HeroSection() {
             onHoverEnd={handleAvatarLeave}
             whileHover={{ y: -4, scale: 1.02 }}
             transition={{ duration: 0.25 }}
-            className="group relative flex h-52 w-52 cursor-pointer items-center justify-center rounded-full shadow-[0_18px_45px_rgba(8,15,30,0.16)] dark:shadow-[0_18px_45px_rgba(0,0,0,0.34)] sm:h-60 sm:w-60"
+            className="group relative flex h-64 w-64 cursor-pointer items-center justify-center rounded-full shadow-[0_18px_45px_rgba(8,15,30,0.16)] dark:shadow-[0_18px_45px_rgba(0,0,0,0.34)] sm:h-[19rem] sm:w-[19rem]"
           >
             <motion.span
               aria-hidden="true"
@@ -153,16 +153,6 @@ function HeroSection() {
               }
               transition={{ duration: 0.25, ease: "easeOut" }}
               className="pointer-events-none absolute inset-[-6px] rounded-full border border-navy/20 dark:border-white/20"
-            />
-            <motion.span
-              aria-hidden="true"
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: isHoveringAvatar ? 1 : 0 }}
-              transition={{
-                duration: isHoveringAvatar ? 2 : 0.2,
-                ease: "linear",
-              }}
-              className="pointer-events-none absolute inset-x-6 bottom-4 h-1 origin-left rounded-full bg-navy/60 dark:bg-white/60"
             />
             <img
               src={profileImage}

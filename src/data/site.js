@@ -19,7 +19,7 @@ export const navLinks = [
 ];
 
 export const profile = {
-  name: 'Mohammad',
+  name: 'Mohammad Baharlou',
   title: 'Frontend Developer & UI-Focused Creator',
   location: 'Eskişehir, Turkey',
   born: '13/02/2000',
@@ -45,7 +45,7 @@ export const stats = [
 export const timeline = [
   {
     title: 'Who I Am',
-    text: 'I am Mohammad, a developer who enjoys creating sleek digital experiences that feel refined, intuitive, and modern.',
+    text: 'I am Mohammad Baharlou, a developer who enjoys creating sleek digital experiences that feel refined, intuitive, and modern.',
   },
   {
     title: 'My Journey',
@@ -70,50 +70,52 @@ export const skillGroups = [
     title: 'Frontend Development',
     icon: Code2,
     skills: [
-      { name: 'HTML', level: 94 },
-      { name: 'CSS', level: 91 },
-      { name: 'JavaScript', level: 88 },
-      { name: 'React', level: 89 },
-      { name: 'Next JS', level: 80 },
-      { name: 'TypeScript', level: 78 },
-      { name: 'Tailwind CSS', level: 92 },
+      { name: 'HTML' },
+      { name: 'CSS' },
+      { name: 'JavaScript' },
+      { name: 'React' },
+      { name: 'Redux' },
+      { name: 'TypeScript' },
+      { name: 'Next JS' },
+      { name: 'Tailwind CSS' },
     ],
   },
   {
     title: 'Design',
     icon: Palette,
     skills: [
-      { name: 'UI Design', level: 86 },
-      { name: 'Figma', level: 82 },
-      { name: 'Modern Layout Systems', level: 87 },
+      { name: 'UI Design' },
+      { name: 'Figma' },
+      { name: 'Modern Layout Systems' },
     ],
   },
   {
     title: 'Tools',
     icon: Layers3,
     skills: [
-      { name: 'Git', level: 84 },
-      { name: 'Component Architecture', level: 88 },
-      { name: 'Responsive Systems', level: 90 },
+      { name: 'Git' },
+      { name: 'Component Architecture' },
+      { name: 'Responsive Systems' },
     ],
   },
   {
     title: 'Mobile Development',
     icon: Smartphone,
     skills: [
-      { name: 'Flutter', level: 70 },
-      { name: 'Native', level: 66 },
+      { name: 'Flutter' },
+      { name: 'Native' },
     ],
   },
   {
     title: 'Animation',
     icon: Sparkles,
-    skills: [{ name: 'Framer Motion', level: 85 }],
+    skills: [{ name: 'Framer Motion' }],
   },
 ];
 
 export const featuredSkills = [
   'React',
+  'Redux',
   'TypeScript',
   'Tailwind CSS',
   'Framer Motion',
@@ -121,54 +123,68 @@ export const featuredSkills = [
   'UI Design',
 ];
 
+const projectPreviewImage = (accent) =>
+  `data:image/svg+xml,${encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f7f9fd" />
+          <stop offset="1" stop-color="#dbe4f1" />
+        </linearGradient>
+        <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ffffff" stop-opacity="0.92" />
+          <stop offset="1" stop-color="${accent}" stop-opacity="0.2" />
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="750" fill="url(#bg)" />
+      <rect x="92" y="86" width="1016" height="578" rx="56" fill="url(#panel)" />
+      <rect x="156" y="150" width="300" height="36" rx="18" fill="${accent}" opacity="0.85" />
+      <rect x="156" y="232" width="888" height="286" rx="36" fill="#ffffff" opacity="0.72" />
+      <rect x="204" y="280" width="268" height="190" rx="28" fill="${accent}" opacity="0.18" />
+      <rect x="512" y="280" width="200" height="28" rx="14" fill="${accent}" opacity="0.42" />
+      <rect x="512" y="338" width="392" height="24" rx="12" fill="#10233f" opacity="0.18" />
+      <rect x="512" y="392" width="330" height="24" rx="12" fill="#10233f" opacity="0.14" />
+      <rect x="156" y="558" width="232" height="36" rx="18" fill="#10233f" opacity="0.14" />
+      <rect x="420" y="558" width="232" height="36" rx="18" fill="#10233f" opacity="0.1" />
+    </svg>
+  `)}`;
+
 export const projectCards = [
   {
-    title: 'Luxe Commerce Experience',
-    description:
-      'A premium storefront concept focused on cinematic product presentation, smooth filtering, and conversion-friendly interactions.',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-    demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/mBaharlou',
+    title: 'Luxe Commerce',
+    image: projectPreviewImage('#10233f'),
+    sourceCodeLink: 'https://github.com/mBaharlou',
+    liveSiteLink: 'https://example.com',
   },
   {
-    title: 'Studio Portfolio System',
-    description:
-      'A clean portfolio template designed for creative professionals with editorial typography and modular project sections.',
-    tags: ['React Router', 'Responsive UI', 'Glassmorphism'],
-    demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/mBaharlou',
+    title: 'Studio Portfolio',
+    image: projectPreviewImage('#5b6f95'),
+    sourceCodeLink: 'https://github.com/mBaharlou',
+    liveSiteLink: 'https://example.com',
   },
   {
-    title: 'Analytics Dashboard Concept',
-    description:
-      'A modern dashboard interface with elegant charts, KPI cards, and a structured navigation experience for teams.',
-    tags: ['JavaScript', 'Design System', 'UI Design'],
-    demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/mBaharlou',
+    title: 'Analytics Dashboard',
+    image: projectPreviewImage('#2f4f6f'),
+    sourceCodeLink: 'https://github.com/mBaharlou',
+    liveSiteLink: 'https://example.com',
   },
   {
-    title: 'Mobile App Showcase',
-    description:
-      'A polished landing page to highlight app features, onboarding flows, and user benefits with layered visual storytelling.',
-    tags: ['Flutter', 'Motion', 'Frontend'],
-    demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/mBaharlou',
+    title: 'Mobile App',
+    image: projectPreviewImage('#64748b'),
+    sourceCodeLink: 'https://github.com/mBaharlou',
+    liveSiteLink: 'https://example.com',
   },
   {
-    title: 'Brand Campaign Microsite',
-    description:
-      'An immersive one-page concept blending brand messaging, motion-driven storytelling, and sharp visual hierarchy.',
-    tags: ['Creative Direction', 'Tailwind CSS', 'UX'],
-    demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/mBaharlou',
+    title: 'Brand Campaign',
+    image: projectPreviewImage('#405979'),
+    sourceCodeLink: 'https://github.com/mBaharlou',
+    liveSiteLink: 'https://example.com',
   },
   {
-    title: 'Personal Knowledge Hub',
-    description:
-      'A refined content-driven interface made for organizing notes, resources, and insights in a focused environment.',
-    tags: ['TypeScript', 'UI Design', 'Productivity'],
-    demoUrl: 'https://example.com',
-    codeUrl: 'https://github.com/mBaharlou',
+    title: 'Knowledge Hub',
+    image: projectPreviewImage('#72849f'),
+    sourceCodeLink: 'https://github.com/mBaharlou',
+    liveSiteLink: 'https://example.com',
   },
 ];
 

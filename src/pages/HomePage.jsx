@@ -52,8 +52,8 @@ function HomePage() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          {featuredSkills.map((skill, index) => (
-            <SkillCard key={skill} name={skill} level={88 - index * 2} />
+          {featuredSkills.map((skill) => (
+            <SkillCard key={skill} name={skill} />
           ))}
         </div>
       </section>
