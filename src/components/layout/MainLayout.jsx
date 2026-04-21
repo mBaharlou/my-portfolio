@@ -18,7 +18,7 @@ function MainLayout() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[34rem] bg-[radial-gradient(circle_at_top,rgba(16,35,63,0.10),transparent_42%)] dark:bg-[radial-gradient(circle_at_top,rgba(207,214,228,0.12),transparent_42%)]" />
       <ScrollToTop />
       <Navbar />
-      <main className="relative z-10">
+      <main className="relative z-10 pt-20">
         <Outlet />
       </main>
       <ConnectStrip />

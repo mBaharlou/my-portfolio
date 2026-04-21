@@ -14,6 +14,7 @@ export const navLinks = [
   { label: 'About Me', path: '/about' },
   { label: 'My Skills', path: '/skills' },
   { label: 'My Works', path: '/works' },
+  { label: 'Are You Bored?', path: '/are-you-bored' },
   { label: 'Contact Me', path: '/contact' },
 ];
 

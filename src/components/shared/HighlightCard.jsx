@@ -5,9 +5,9 @@ function HighlightCard({ icon: Icon, title, text }) {
     <motion.article
       whileHover={{ y: -6 }}
       transition={{ duration: 0.25 }}
-      className="rounded-[1.8rem] border border-slate-300/80 bg-white/75 p-6 shadow-card backdrop-blur-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5"
+      className="border-l border-slate-300/80 py-2 pl-6 transition-colors duration-300 dark:border-white/12"
     >
-      <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-300/80 bg-slate-100 text-navy dark:border-white/10 dark:bg-white/10 dark:text-white">
+      <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-300/80 bg-white/55 text-navy transition-colors duration-300 dark:border-white/12 dark:bg-white/10 dark:text-white">
         <Icon size={20} />
       </div>
       <h3 className="mt-6 text-xl font-semibold text-obsidian dark:text-white">{title}</h3>

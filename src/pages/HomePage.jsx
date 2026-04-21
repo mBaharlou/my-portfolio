@@ -22,7 +22,7 @@ function HomePage() {
           title="now you will see what i know and learned."
           description="This homepage introduces who I am, the kind of work I enjoy, and the visual style I bring into modern frontend experiences."
         />
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 lg:grid-cols-3">
           {homeHighlights.map((item) => (
             <HighlightCard key={item.title} {...item} />
           ))}
@@ -30,7 +30,7 @@ function HomePage() {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:px-8">
-        <div className="rounded-[2rem] border border-slate-300/80 bg-white/75 p-8 shadow-card backdrop-blur-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5">
+        <div className="border-y border-slate-300/80 py-8 transition-colors duration-300 dark:border-white/10">
           <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-silver/60">
             About Me
           </p>
@@ -79,8 +79,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="rounded-[2rem] border border-slate-300/80 bg-gradient-to-br from-white to-slate-100 p-8 shadow-glow backdrop-blur-xl transition-colors duration-300 dark:border-white/10 dark:bg-gradient-to-br dark:from-white/10 dark:to-navy/30 md:p-10">
+      <section className="mx-auto max-w-7xl border-y border-slate-300/80 px-4 py-16 transition-colors duration-300 dark:border-white/10 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Call To Action"
             title="Let’s create something"
@@ -102,7 +101,6 @@ function HomePage() {
               Visit My GitHub
             </a>
           </div>
-        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

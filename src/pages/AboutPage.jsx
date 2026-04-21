@@ -68,14 +68,14 @@ function AboutPage() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.45 }}
-        className="mt-10 rounded-[2rem] border border-slate-300/80 bg-gradient-to-br from-white to-slate-100 p-8 shadow-glow backdrop-blur-xl transition-colors duration-300 dark:border-white/10 dark:bg-gradient-to-br dark:from-white/10 dark:to-navy/25"
+        className="mt-12 border-y border-slate-300/80 py-8 transition-colors duration-300 dark:border-white/10"
       >
-        <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-silver/60">Languages I Speak</p>
+        <p className="text-sm uppercase tracking-[0.32em] text-slate-500 dark:text-silver/70">Languages I Speak</p>
         <div className="mt-6 flex flex-wrap gap-3">
           {languages.map((language) => (
             <span
               key={language}
-              className="rounded-full border border-slate-300/80 bg-white px-5 py-3 text-sm text-obsidian dark:border-white/12 dark:bg-white/8 dark:text-white"
+              className="rounded-full border border-slate-300/80 bg-white/55 px-5 py-3 text-sm font-medium text-obsidian transition-colors duration-300 dark:border-white/15 dark:bg-white/10 dark:text-white"
             >
               {language}
             </span>
