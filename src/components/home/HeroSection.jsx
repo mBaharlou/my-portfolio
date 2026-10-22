@@ -132,7 +132,7 @@ function HeroSection() {
         initial={{ opacity: 0, scale: 0.95, y: 24 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.65, delay: 0.12 }}
-        className="relative flex items-center justify-center"
+        className="relative flex flex-col items-center justify-center"
       >
         <div className="absolute h-52 w-52 rounded-full bg-[radial-gradient(circle,rgba(16,35,63,0.18),transparent_60%)] blur-3xl dark:bg-[radial-gradient(circle,rgba(207,214,228,0.3),transparent_60%)] sm:h-64 sm:w-64" />
         <div className="relative flex w-full max-w-sm items-center justify-center p-2 sm:p-4">
@@ -161,6 +161,7 @@ function HeroSection() {
             />
           </motion.div>
         </div>
+        <p className="mt-4 text-xs text-slate-500 dark:text-silver/60">hi</p>
       </motion.div>
     </section>
   );
