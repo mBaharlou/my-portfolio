@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../navbar/Navbar';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import ConnectStrip from '../shared/ConnectStrip';

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import clsx from '../utils/clsx';
+import clsx from '../../utils/clsx';
 
 function Cell({ value, index, isWinning, disabled, onSelect }) {
   const markClass = value === 'X' ? 'text-red-500 dark:text-red-400' : 'text-blue-600 dark:text-blue-400';

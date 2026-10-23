@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import clsx from '../utils/clsx';
+import clsx from '../../utils/clsx';
 
 function ButtonLink({
   children,

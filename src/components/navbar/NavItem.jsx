@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import clsx from '../utils/clsx';
+import clsx from '../../utils/clsx';
 
 function NavItem({ label, path, onClick, mobile = false }) {
   return (

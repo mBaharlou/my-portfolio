@@ -1,6 +1,6 @@
 import MainLayout from '../components/layout/MainLayout';
 import AboutPage from '../pages/AboutPage';
-import AreYouBored from '../pages/AreYouBored';
+import AreYouBoredPage from '../pages/AreYouBoredPage';
 import ContactPage from '../pages/ContactPage';
 import HomePage from '../pages/HomePage';
 import SkillsPage from '../pages/SkillsPage';
@@ -15,7 +15,7 @@ export const appRoutes = [
       { path: 'about', element: <AboutPage /> },
       { path: 'skills', element: <SkillsPage /> },
       { path: 'works', element: <WorksPage /> },
-      { path: 'are-you-bored', element: <AreYouBored /> },
+      { path: 'are-you-bored', element: <AreYouBoredPage /> },
       { path: 'contact', element: <ContactPage /> },
     ],
   },

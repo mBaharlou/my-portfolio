@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { navLinks, profile } from '../../data/site';
 import ButtonLink from '../shared/ButtonLink';
 import ThemeToggle from '../shared/ThemeToggle';
-import clsx from '../utils/clsx';
+import clsx from '../../utils/clsx';
 import MobileMenu from './MobileMenu';
 import NavItem from './NavItem';
 
