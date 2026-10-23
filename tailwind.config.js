@@ -32,9 +32,16 @@ export default {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-8px)' },
         },
+        'shooting-star': {
+          '0%': { left: '-30%', top: '18%', opacity: '0' },
+          '4%': { opacity: '1' },
+          '26%': { opacity: '1' },
+          '30%, 100%': { left: '110%', top: '62%', opacity: '0' },
+        },
       },
       animation: {
         float: 'float 6s ease-in-out infinite',
+        'shooting-star': 'shooting-star 7s ease-in 1.5s infinite',
       },
     },
   },

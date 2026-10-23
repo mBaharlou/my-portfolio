@@ -9,6 +9,7 @@ import {
   homeHighlights,
   profile,
   projectCards,
+  strongestSkill,
 } from "../data/site";
 
 function HomePage() {
@@ -53,7 +54,7 @@ function HomePage() {
 
         <div className="grid gap-4 sm:grid-cols-2">
           {featuredSkills.map((skill) => (
-            <SkillCard key={skill} name={skill} />
+            <SkillCard key={skill} name={skill} featured={skill === strongestSkill} />
           ))}
         </div>
       </section>

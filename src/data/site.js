@@ -123,7 +123,10 @@ export const featuredSkills = [
   'Framer Motion',
   'Next JS',
   'UI Design',
+  'JavaScript',
 ];
+
+export const strongestSkill = 'JavaScript';
 
 const projectPreviewImage = (accent) =>
   `data:image/svg+xml,${encodeURIComponent(`
