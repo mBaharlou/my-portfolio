@@ -1,0 +1,21 @@
+name: Deploy to server
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+    steps:
+      - name: Run deploy script on the droplet
+        if: env.SSH_PRIVATE_KEY != ''
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # The key is restricted on the server to run /root/deploy.sh only.
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=accept-new root@138.68.70.240
