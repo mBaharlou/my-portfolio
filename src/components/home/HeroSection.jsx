@@ -105,27 +105,6 @@ function HeroSection() {
             Visit My GitHub
           </a>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.28 }}
-          className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4"
-        >
-          {stats.map((item) => (
-            <div
-              key={item.label}
-              className="min-w-0 rounded-3xl border border-slate-300/80 bg-white/75 px-5 py-4 shadow-card backdrop-blur-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5"
-            >
-              <p className="break-words text-[1.65rem] font-semibold leading-tight text-obsidian dark:text-white sm:text-3xl">
-                {item.value}
-              </p>
-              <p className="mt-2 break-words text-xs uppercase tracking-[0.24em] text-slate-500 dark:text-silver/55">
-                {item.label}
-              </p>
-            </div>
-          ))}
-        </motion.div>
       </div>
 
       <motion.div
@@ -162,6 +141,27 @@ function HeroSection() {
           </motion.div>
         </div>
         <p className="mt-4 text-xs text-slate-500 dark:text-silver/60">hi</p>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 32 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.28 }}
+        className="grid gap-4 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
+      >
+        {stats.map((item) => (
+          <div
+            key={item.label}
+            className="min-w-0 rounded-3xl border border-slate-300/80 bg-white/75 px-6 py-5 shadow-card lg:px-5 xl:px-6 backdrop-blur-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5"
+          >
+            <p className="whitespace-nowrap text-3xl font-semibold leading-tight text-obsidian dark:text-white sm:text-4xl lg:text-[1.75rem] xl:text-4xl">
+              {item.value}
+            </p>
+            <p className="mt-2 text-xs uppercase tracking-[0.24em] text-slate-500 dark:text-silver/55">
+              {item.label}
+            </p>
+          </div>
+        ))}
       </motion.div>
     </section>
   );

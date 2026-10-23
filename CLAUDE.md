@@ -2,13 +2,13 @@
 
 ## Çalışma kuralları (site sahibinin isteği)
 
-- **Büyük değişiklikler** (yeni özellik, birden fazla dosya, yapı/bağımlılık değişikliği) her zaman **yeni bir branch**'te yapılır. `main`'de doğrudan çalışılmaz.
+- **Yeni branch sadece çok büyük değişiklikler için** açılır: bir sayfayı baştan değiştirmek, yeni bir sayfa/bölüm/özellik eklemek, yapı veya bağımlılık değişikliği. Metin, stil, kart düzeni gibi normal düzeltmeler branch açmadan yapılır.
 - `main`'e göndermeden önce mutlaka **test et**:
   - `npm run build` hatasız geçmeli.
   - Değişiklik tarayıcıda çalıştırılıp kontrol edilmeli (Playwright/Chromium ile).
   - **Güvenlik kontrolü**: kodda sır/şifre/anahtar olmamalı, `dangerouslySetInnerHTML` gibi riskli kullanımlar ve yeni bağımlılıklar gözden geçirilmeli.
-- Ancak hiçbir sorun ve güvenlik riski yoksa branch `main`'e merge edilip push edilir.
-- Küçük, tek dosyalık değişiklikler (metin, renk düzeltmesi) de build'den geçirilmeden `main`'e push edilmez.
+- Test her değişiklikte (branch olsun olmasın) yapılır; ancak hiçbir sorun ve güvenlik riski yoksa `main`'e push edilir.
+- Görsel değişikliklerde farklı ekran genişliklerinde (telefon, tablet, masaüstü) taşma/kelime bölünmesi kontrol edilir.
 
 ## Deploy
 
