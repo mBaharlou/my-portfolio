@@ -13,8 +13,8 @@ export default {
         slateglass: 'rgba(207, 214, 228, 0.08)',
       },
       fontFamily: {
-        sans: ['"Rubik"', 'system-ui', 'sans-serif'],
-        display: ['"Rubik"', 'system-ui', 'sans-serif'],
+        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+        display: ['"Space Grotesk"', '"Inter"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         glow: '0 24px 80px rgba(8, 15, 30, 0.35)',
