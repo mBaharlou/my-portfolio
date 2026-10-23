@@ -23,7 +23,9 @@ export const profile = {
   title: 'Frontend Developer & UI-Focused Creator',
   location: 'Eskişehir, Turkey',
   born: '13/02/2000',
-  experience: '3 years',
+  experience: '5 years',
+  company: 'Coalition Technologies',
+  team: 'Design & Development',
   email: 'mmdbaharlou@gmail.com',
   phone: '+905526890687',
   github: 'https://github.com/mBaharlou',
@@ -36,7 +38,7 @@ export const profile = {
 };
 
 export const stats = [
-  { value: '3+', label: 'Years of Programming' },
+  { value: '5+', label: 'Years of Programming' },
   { value: '13 Feb 2000', label: 'Born' },
   { value: 'Eskişehir', label: 'Based In' },
   { value: '3', label: 'Languages Spoken' },
@@ -49,7 +51,7 @@ export const timeline = [
   },
   {
     title: 'My Journey',
-    text: 'Over the last 3 years, I have been developing my programming skills with a strong interest in frontend technologies, design systems, and interaction details.',
+    text: 'Over the last 5 years, I have been developing my programming skills with a strong interest in frontend technologies, design systems, and interaction details.',
   },
   {
     title: 'Education',

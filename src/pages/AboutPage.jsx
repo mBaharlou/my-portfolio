@@ -34,9 +34,23 @@ function AboutPage() {
               <span>Location</span>
               <strong className="text-obsidian dark:text-white">{profile.location}</strong>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between border-b border-slate-300/80 pb-4 dark:border-white/10">
               <span>University</span>
               <strong className="text-right text-obsidian dark:text-white">Anadolu University</strong>
+            </div>
+            <div className="flex items-center justify-between gap-4 border-b border-slate-300/80 pb-4 dark:border-white/10">
+              <span>Company</span>
+              <strong className="text-right text-obsidian dark:text-white">{profile.company}</strong>
+            </div>
+            <div className="flex items-center justify-between gap-4">
+              <span>Team</span>
+              <span className="flex flex-wrap items-center justify-end gap-2 text-right">
+                <strong className="text-obsidian dark:text-white">{profile.team}</strong>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-700 dark:text-emerald-300">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  Currently active
+                </span>
+              </span>
             </div>
           </div>
         </motion.div>
