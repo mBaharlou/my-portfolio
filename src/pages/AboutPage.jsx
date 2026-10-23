@@ -34,23 +34,28 @@ function AboutPage() {
               <span>Location</span>
               <strong className="text-obsidian dark:text-white">{profile.location}</strong>
             </div>
-            <div className="flex items-center justify-between border-b border-slate-300/80 pb-4 dark:border-white/10">
+            <div className="flex items-center justify-between">
               <span>University</span>
               <strong className="text-right text-obsidian dark:text-white">Anadolu University</strong>
             </div>
-            <div className="flex items-center justify-between gap-4 border-b border-slate-300/80 pb-4 dark:border-white/10">
-              <span>Company</span>
-              <strong className="text-right text-obsidian dark:text-white">{profile.company}</strong>
-            </div>
-            <div className="flex items-center justify-between gap-4">
-              <span>Team</span>
-              <span className="flex flex-wrap items-center justify-end gap-2 text-right">
-                <strong className="text-obsidian dark:text-white">{profile.team}</strong>
+            <div className="relative overflow-hidden rounded-3xl border border-navy/20 bg-gradient-to-br from-navy/[0.07] via-white/60 to-navy/[0.12] p-6 shadow-card dark:border-silver/25 dark:from-white/[0.12] dark:via-white/[0.04] dark:to-navy-soft/40">
+              <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-navy/10 blur-2xl dark:bg-silver/15" />
+              <div className="relative flex flex-wrap items-center justify-between gap-3">
+                <span className="text-xs uppercase tracking-[0.28em] text-slate-500 dark:text-silver/60">Company</span>
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-700 dark:text-emerald-300">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  </span>
                   Currently active
                 </span>
-              </span>
+              </div>
+              <p className="relative mt-3 font-display text-3xl font-semibold leading-tight text-obsidian dark:text-white sm:text-4xl">
+                {profile.company}
+              </p>
+              <p className="relative mt-3 text-sm text-slate-600 dark:text-silver/75">
+                <strong className="text-obsidian dark:text-white">{profile.team}</strong> team
+              </p>
             </div>
           </div>
         </motion.div>
